@@ -7,7 +7,7 @@ dotenv.config();
 export default async function consumeFromRabbitMQ() {
   try {
     const connection = await amqp.connect(
-      `amqp://${process.env.RABBITMQ_DEFAULT_USER}:${process.env.RABBITMQ_DEFAULT_PASS}@${process.env.RABBITMQ_HOST}`
+      `amqp://${process.env.RABBITMQ_DEFAULT_USER}:${process.env.RABBITMQ_DEFAULT_PASS}@${process.env.RABBITMQ_HOST}/`
     );
     console.log("Connected to RabbitMQ");
 
