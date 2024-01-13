@@ -7,7 +7,7 @@ const app = express();
 const PORT = 3001;
 
 var corsOptions = {
-  origin: ["http://localhost:3002", "http://localhost:3000"],
+  origin: ["https://prescription-service-kttk.onrender.com", "https://prescription-api-gateway.onrender.com"],
   methods: "GET",
 };
 
