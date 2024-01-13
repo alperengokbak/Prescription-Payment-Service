@@ -11,7 +11,7 @@ var corsOptions = {
   methods: "GET",
 };
 
-app.use(cors(corsOptions));
+app.use(cors());
 
 app.get("/trigger-task", async (req, res) => {
   try {
