@@ -9,6 +9,7 @@ export default async function consumeFromRabbitMQ() {
     const connection = await amqp.connect(
       `amqp://${process.env.RABBITMQ_DEFAULT_USER}:${process.env.RABBITMQ_DEFAULT_PASS}@${process.env.RABBITMQ_HOST}`
     );
+    console.log(connection);
     console.log("Connected to RabbitMQ");
 
     const channel = await connection.createChannel();
